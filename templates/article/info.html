@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block logo %}
+
+{% endblock %}
+{% block content %}
+<br>
+<div class="container">
+	<div class="row mb-4">
+		{% for a in object_list %}
+			<div class="col-11 p-4">
+			<h1 class=" mb-4 mt-4 text-center">درباره</h1>
+				<img class="img-fluid rounded mx-auto d-block" style="width:350px; height: 350px; border-radius: 75px" src="{{ a.pic.url }}"><br><br>
+				<h5 class="">در باره من : </h5>
+				<p class="text-muted mb-4">{{a.description}}</p>
+				<h5 class="">مهارت های من</h5>
+				<p class="text-muted ">{{a.skils}}</p>
+				<p class="text-muted ">{{a.skils1}}</p>
+				<p class="text-muted ">{{a.skils2}}</p>
+				<p class="text-muted ">{{a.skils3}}</p>
+				<p class="text-muted ">{{a.skils4}}</p>
+				<p class="text-muted ">{{a.skils5}}</p>
+				<p class="text-muted ">{{a.skils6}}</p>
+				<p class="text-muted ">{{a.skils7}}</p>
+				<p class="text-muted ">{{a.skils8}}</p>
+				<p class="text-muted ">{{a.skils9}}</p>
+				<p class="text-muted ">{{a.skils10}}</p>
+				<p class="text-muted ">{{a.skils11}}</p>
+				<p class="text-muted ">{{a.skils12}}</p>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+
+{% endblock %}
