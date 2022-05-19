@@ -4,13 +4,12 @@
 {% endblock %}
 {% block content %}
 <br>
-<div class="container">
-	<div class="row mb-4">
+<div class="container-lg">
+	<div class="row">
 		{% for a in object_list %}
-			<div class="col-11 p-4">
-			<h1 class=" mb-4 mt-4 text-center">درباره</h1>
-				<img class="img-fluid rounded mx-auto d-block" style="width:350px; height: 350px; border-radius: 75px" src="{{ a.pic.url }}"><br><br>
-				<h5 class="">در باره من : </h5>
+			<div class="col-11">
+				<img class="img-fluid mx-auto d-block mt-3" style="width:310px; height: 310px; border-radius: 75px;image-rendering: -webkit-optimize-contrast;" src="{{ a.pic.url }}"><br><br>
+				<h5 class="">در باره ابر جواد : </h5>
 				<p class="text-muted mb-4">{{a.description}}</p>
 				<h5 class="">مهارت های من</h5>
 				<p class="text-muted ">{{a.skils}}</p>

@@ -9,6 +9,7 @@ class ArticleList(ListView):
 class ArticleSList(ListView):
 	queryset = Article.objects.filter(status=True).order_by("-time")
 	template_name = "article/articles.html"
+	paginate_by = 4
 
 class ArticleDetailView(DetailView):
 	template_name = "article/articledetail.html"
